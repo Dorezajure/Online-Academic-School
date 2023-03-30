@@ -1,0 +1,19 @@
+@media (max-width: 1190px) {
+    .destinations__slider {
+        width: 100%;
+    }
+    .slider {
+        position: relative;
+        height: 375px;
+    }
+}
+
+@media (max-width: 425px) {
+    .destinations__slider {
+        width: 100%;
+    }
+    .slider {
+        position: relative;
+        height: 305px;
+    }
+}
