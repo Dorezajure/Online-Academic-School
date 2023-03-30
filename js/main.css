@@ -1,0 +1,31 @@
+// Слайдер
+var owl = $('.owl-carousel');
+
+owl.owlCarousel({
+    loop: true,
+    startPosition: 0,
+    items: 1,
+    //Работа с отступами при адаптиве
+    responsive : {
+        425 : {
+            items: 2,
+        },
+        740 : {
+            items: 3,
+        },
+        1024 : {
+            items: 3,
+        },
+        1200 : {
+            items: 4,
+        }
+    }
+});
+
+$('.slider__btn--prev').click(function() {
+    owl.trigger('prev.owl.carousel');
+})
+
+$('.slider__btn--next').click(function() {
+    owl.trigger('next.owl.carousel');
+})
