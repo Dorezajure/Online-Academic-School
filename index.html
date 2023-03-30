@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academik</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__icon">
+                    <img src="./img/logo.svg" alt="logo">
+                    <p class="header__logo">Академик</p>
+                </div>
+                <ul class="header__menu">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Курсы</a></li>
+                    <li><a href="#">Цены</a></li>
+                    <li class="header__menu__last"><a href="#">Для родителей</a></li>
+                </ul>
+                <div class="header__button">
+                    <a class="header__login" href="#">Войти</a>
+                    <button class="button">
+                        <a href="#">Регистрация</a>
+                        <img src="./img/arrow_right.png" alt="arrow_right">
+                    </button>
+                </div>
+            </div>
+            <div class="header__information">
+                <div class="header__text">
+                    <h1>Онлайн-школа<br>по подготовке<br>к экзаменам</h1>
+                </div>
+                <div class="header__title">
+                    <p>Занимаемся комплексной<br>подготовкокой к ОГЭ и ЕГЭ</p>
+                </div>
+                <div class="button__group">
+                    <button class="button__scroll">
+                        <a href="#">Пробное занятие</a>
+                    </button>
+                    <button class="button__line">
+                        <a href="#">Начать обучение</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="section__wrapper">
+                    <div class="block">
+                        <div class="block__rectangle">
+                            <img src="./img/rectangle.png" alt="">
+                        </div>
+                        <div class="block__text">
+                            <h2>Как проходит обучение</h2>
+                        </div>
+                        <div class="block__title">
+                            <p>В данном видеоролике вы можете узнать подробнее<br>
+                                о формате обучения, а также погрузиться в механику<br>
+                                подготовительных курсов.
+                            </p>
+                        </div>
+                        <div class="block__button">
+                            <button class="button__scroll">
+                                <a href="#">Пробное занятие</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <div class="about__content">
+                            <div class="video video-overlay">
+                                <button class="video__btn" id="video-btn">
+                                    <img src="./img/play-btn.svg" alt="Play">
+                                </button>
+                                <picture class="video__picture">
+                                    <img src="./img/video-picture.jpg" alt="Preview">
+                                </picture>
+                                <video class="video__object" id="video-file" loop>
+                                    <source src="./video/video.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="direction__wrapper">
+                    <div class="direction__text">
+                        <h2>Направления подготовки</h2>
+                    </div>
+                    <div class="direction__title">
+                        <p>Выберите одно или несколько направлений подготовки, на основе которой<br> 
+                            ваш ребенок собирается поступать в среднее или высшее учебное заведение.</p>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <!--1 card-->
+                    <div class="card">
+                        <div class="card__img">
+                            <img src="./img/school.svg" alt="">
+                        </div>
+                        <div class="card__text">
+                            <h3>Техническое<br>
+                                направление</h3>
+                        </div>
+                        <div class="card__rectangle"></div>
+                        <div class="card__title">
+                            <p>Проф. математика,<br>
+                                Физика,<br>
+                                Информатика</p>
+                        </div>
+                    </div>
+                    <!--1 card-->
+                    <!--2 card-->
+                    <div class="card" id="card__botton">
+                        <div class="card__img">
+                            <img src="./img/cool.svg" alt="">
+                        </div>
+                        <div class="card__text">
+                            <h3>Гумунитарное<br> 
+                                направление</h3>
+                        </div>
+                        <div class="card__rectangle"></div>
+                        <div class="card__title">
+                            <p>Обществознание,<br> 
+                                История,<br>  
+                                Литература</p>
+                        </div>
+                    </div>
+                    <!--2 card-->
+                    <!--3 card-->
+                    <div class="card" id="card__people">
+                        <div class="card__img">
+                            <img src="./img/book.svg" alt="">
+                        </div>
+                        <div class="card__text" id="text__white">
+                            <h3>Языковое<br>
+                                направление</h3>
+                        </div>
+                        <div class="card__rectangle" id="rectangle__white"></div>
+                        <div class="card__title" id="title__white">
+                            <p>Русский язык,<br>
+                                Английский язык</p>
+                        </div>
+                    </div>
+                    <!--3 card-->
+                    <!--4 card-->
+                    <div class="card" id="card__botton">
+                        <div class="card__img">
+                            <img src="./img/clever.svg" alt="">
+                        </div>
+                        <div class="card__text">
+                            <h3>Естествознание</h3>
+                        </div>
+                        <div class="card__rectangle"></div>
+                        <div class="card__title">
+                            <p>Химия,<br>
+                                Биология</p>
+                        </div>
+                    </div>
+                    <!--4 card-->
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="reviews__wrapper">
+                    <div class="reviews__text">
+                        <h2>Отзывы</h2>
+                    </div>
+                    <div class="reviews__title">
+                        <p>Онлайн-школа “Академик” существует с недавнего времени, но<br>
+                            уже успела зарекомендовать себя как образовательную организацию,<br>
+                            которая отвечает за результат.</p>
+                    </div>
+                </div>
+                <div class="rewiew__wrapper">
+                    <!--1 rewiew-->
+                    <div class="rewiew__card">
+                        <div class="rewiew__img">
+                            <img src="./img/circle.jpg" alt="Photo">
+                        </div>
+                        <div class="rewiew__title">
+                            <p>В начале учебного года свою дочку<br> 
+                            Ксюшу решила отдать в данную школу,<br>
+                            уровнем подготовки довольны.</p></div>
+                        <div class="rewiew__icon"><img src="./img/stars.svg" alt="Stars"></div>
+                        <div class="rewiew__name"><h3>Регина Алексеевна</h3></div>
+                        <div class="rewiew__position"><p>Родитель</p></div>
+                    </div>
+                    <!--1 rewiew-->
+                    <!--2 rewiew-->
+                    <div class="rewiew__card">
+                        <div class="rewiew__img">
+                            <img src="./img/circle-sec.jpg" alt="Photo">
+                        </div>
+                        <div class="rewiew__title">
+                            <p>Данную онлайн-школу мне<br>
+                                посоветовала подруга, сын доволен<br>
+                                преподавателем по русскому языку.</p></div>
+                        <div class="rewiew__icon"><img src="./img/stars.svg" alt="Stars"></div>
+                        <div class="rewiew__name"><h3>Александра Николаевна</h3></div>
+                        <div class="rewiew__position"><p>Родитель</p></div>
+                    </div>
+                    <!--2 rewiew-->
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="container">
+                    <div class="slide__wrapper">
+                        <div class="slide__text">
+                            <h2>Наши преподаватели</h2>
+                        </div>
+                        <div class="slide__title">
+                            <p>В онлайн-школе “Академик” работают исключительно молодые<br>
+                                амбициозные преподаватели с оытом от 3 и более лет.  </p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <section class="destinations">
+            <div class="container">
+                <div class="destinations__slider">
+                    <div class="slider">
+                        <div class="owl-carousel">
+                            <img class="slider__item" src="./img/col-1.png" alt="slider item">
+                            <img class="slider__item" src="./img/col-2.png" alt="slider item">
+                            <img class="slider__item" src="./img/col-3.png" alt="slider item">
+                            <img class="slider__item" src="./img/col-4.png" alt="slider item">
+                            <img class="slider__item" src="./img/col-5.png" alt="slider item">
+                            <img class="slider__item" src="./img/col-6.png" alt="slider item">
+                            <img class="slider__item" src="./img/col-7.png" alt="slider item">
+                            <img class="slider__item" src="./img/col-8.png" alt="slider item">
+                            <img class="slider__item" src="./img/col-9.png" alt="slider item">
+                            <img class="slider__item" src="./img/col-10.png" alt="slider item">
+                        </div>
+                        <button class="slider__btn slider__btn--prev">
+                            <img src="./img/arrow-left.png" alt="">
+                        </button>
+                        <button class="slider__btn slider__btn--next">
+                            <img src="./img/arrow-right.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="slide__wrapper">
+                    <div class="slide__text">
+                        <h2>Остались вопросы?</h2>
+                    </div>
+                    <div class="slide__title">
+                        <p>В данной онлайн-форме вы можете задать любой интересующий вопрос,<br>
+                            вам ответит консультатнт в течении 30 мин. </p>
+                    </div>
+                </div>
+                <div class="messages--wrapper">
+                    <div class="form">
+                        <div class="form__wrapper">
+                            <form action="#" method="post" target="_blank">
+                                <div class="form__profile">
+                                    <h2>Анкета для клиентов</h2>
+                                </div>
+                                <fieldset class="text-field">
+                                    <div class="flats">
+                                        <div class="flats__name">
+                                            <label class="text-field__label" for="name">Имя</label>
+                                            <input class="text-field__input" type="text" name="name" placeholder="Имя" id="name" required>
+                                        </div>
+                                        <div class="flats__surname">
+                                            <label class="text-field__label" for="age">Фамилия</label>
+                                            <input class="text-field__input" type="text" name="age" placeholder="Фамилия">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="text-field">
+                                    <div class="email">
+                                        <label class="text-field__label" for="email">E-mail</label>
+                                        <input class="text-field__input" type="email" name="mail" placeholder="Ваш адрес электронной почты" id="email" required>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="text-field">
+                                    <div class="phone">
+                                        <label class="text-field__label" for="number">Телефон</label>
+                                        <input class="text-field__input" type="tel" name="phone" placeholder="+7 000 000-00-00" id="number" maxlength="21" required>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="text-field">
+                                    <div class="message">
+                                        <label class="text-field__label" for="text">Ваш вопрос</label>
+                                        <textarea class="text-field__input" id="message" type="text" name="text" placeholder="Место для вопроса..." required></textarea>
+                                    </div>
+                                </fieldset>
+                                <div class="forms__btn">
+                                    <button type="submit"><a href="#" class="btn">Отправить</a></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="form__img">
+                            <img src="./img/blocks.png" alt="blocks">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__block__one">
+                        <div class="footer__logo">
+                            <img class="footer__img" src="./img/icon-logo.png" alt="logo">
+                            <h4>Академик</h4>
+                        </div>
+                        <div class="footer__text"><h5>Присоеденяйся к нашему<br>
+                            сплаченному коллективу!</h5></div>
+                        <div class="footer__icons">
+                            <a href=""><img src="./img/vkontakte.svg" alt="vkontakte"></a>
+                            <a href=""><img src="./img/telegram.svg" alt="telegram"></a>
+                            <a href=""><img src="./img/youtube.svg" alt="youtube"></a>
+                            <a href=""><img src="./img/viber.svg" alt="viber"></a>
+                        </div>
+                    </div>
+                    <div class="footer__block__two">
+                        <div class="footer__wrap" id="footer__wrap__one">
+                            <div class="footer__plase">
+                                <h6>Академик</h6>
+                            </div>
+                            <div class="footer__tem">
+                                <a class="footer__tems" href="#">О школе</a>
+                                <a class="footer__tems" href="#">Вакансии</a>
+                                <a class="footer__tems" href="#">Отзывы</a>
+                                <a class="footer__tems" href="#">Личный кабинет</a>
+                            </div>
+                        </div>
+                        <div class="footer__wrap" id="footer__wrap__one">
+                            <div class="footer__plase">
+                                <h6>Продукты</h6>
+                            </div>
+                            <div class="footer__tem">
+                                <a class="footer__tems" href="#">Курсы</a>
+                                <a class="footer__tems" href="#">Youtube канал</a>
+                                <a class="footer__tems" href="#">Бесплатные<br>материалы</a>
+                                <a class="footer__tems" href="#">Еженедельная рассылка</a>
+                            </div>
+                        </div>
+                        <div class="footer__wrap">
+                            <div class="footer__plase">
+                                <h6>Контакты</h6>
+                            </div>
+                            <div class="footer__inform">
+                                <div class="footer__phone">
+                                    <img src="./img/bx_bx-phone.svg" alt="phone">
+                                    <a class="footer__contacts" href="#">8-965-906-31-98</a>
+                                </div>
+                                <div class="footer__sity">
+                                    <img src="./img/bx_bx-map.svg" alt="phone">
+                                    <a class="footer__contacts" href="#">г.Красноярск</a>
+                                </div>
+                                <div class="footer__email">
+                                    <img src="./img/carbon_send-alt.svg" alt="phone">
+                                    <a class="footer__contacts" href="#">academic_krsk@yandex.ru</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__rectangle"></div> 
+        </footer>
+    </main>
+    <!--Скрипты-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
